@@ -2,12 +2,12 @@ type Link {
   id: ID! @id
   description: String!
   url: String!
-  postedBy: User
+  author: User
 }
 
 type User {
   id: ID! @id
-  name: String!
+  username: String!
   email: String! @unique
   password: String!
   links: [Link!]!

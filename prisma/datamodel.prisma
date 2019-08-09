@@ -2,7 +2,7 @@ type Link {
   id: ID! @id
   description: String!
   url: String!
-  author: User
+  author: User @relation(link: INLINE)
 }
 
 type User {
@@ -10,5 +10,5 @@ type User {
   username: String!
   email: String! @unique
   password: String!
-  links: [Link!]!
+  links: [Link!]! 
 }

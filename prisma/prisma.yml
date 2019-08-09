@@ -1,9 +1,10 @@
 # The HTTP endpoint for your Prisma API
 #endpoint: ''
-endpoint: https://eu1.prisma.sh/sreetam-das-2b3e0e/hackernews-node/dev
+endpoint: http://34.83.132.67:4466
 
 # Points to the file that contains your datamodel
 datamodel: datamodel.prisma
+databaseType: document
 
 # Specifies language & location for the generated Prisma client
 generate:
@@ -12,3 +13,4 @@ generate:
 # hooks:
 #     post-deploy:
 #         - prisma generate
+

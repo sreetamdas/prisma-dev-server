@@ -12,6 +12,7 @@ const resolvers = {
 	User,
 	Link,
 };
+
 const server = new GraphQLServer({
 	typeDefs: "./src/schema.graphql",
 	resolvers,
